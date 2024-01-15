@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: rgb(46, 139, 87);
+  --primary-color-transparent: rgb(46, 89, 87, 0.8);
+  --background: antiquewhite;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  overflow: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 900;
+  background-color: var(--background);
+  width: 100%;
+  justify-content: flex-end;
+}

@@ -1,0 +1,44 @@
+<!-- Pokemon Grid -->
+<div class="pokemon-visualizer">
+  <img class="pokemon-sprite" id="pkmnContainer" src="" alt="" />
+</div>
+<div class="pokemon-grid">
+  <div class="box" *ngFor="let pokemon of pokemons; let i=index">
+    <div class="bg-container">
+      <div
+        class="bg-type {{pokemon.types[x].type.name}}"
+        *ngFor="let type of pokemon.types; let x=index "
+      ></div>
+    </div>
+    <img
+      class="pokemon-sprite"
+      src="https://img.pokemondb.net/sprites/home/normal/{{pokemon.name}}.png"
+      alt="Pokemon"
+    />
+
+    <div class="container-info">
+      <div class="header-container">
+        <div class="container-name">
+          <h3>{{pokemon.name}} <br />#{{pokemon.id}}</h3>
+        </div>
+
+        <div class="container-types">
+          <div
+            class="type-box {{pokemon.types[x].type.name}}"
+            *ngFor="let type of pokemon.types; let x=index "
+          >
+            <p>{{pokemon.types[x].type.name}}</p>
+          </div>
+        </div>
+      </div>
+
+      <h4>Ability :</h4>
+
+      <div class="container-ability">
+        <p *ngFor="let ability of pokemon.abilities; let x=index">
+          {{pokemon.abilities[x].ability.name}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
