@@ -1,6 +1,7 @@
 # PkdxApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+Inspired from this tutorial : https://www.youtube.com/watch?v=ov9UqIEa8Zs
 
 ## Development server
 
